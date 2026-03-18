@@ -57,7 +57,7 @@ AVAILABLE_CHARACTERS = [{
     "Creature": "Ice Minotuar",
     "Color": "Gray and White",
     "Strength": 60,
-    "weakness": "Color Red",
+    "Weakness": "Color Red",
     "Height": 15,
     "Health": 200
 },
