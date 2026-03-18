@@ -1,9 +1,11 @@
+from select_character import select_character
+
 while True:
     print("Welcome to Mount Everst climbers")
     print("1. Start climbing but only if your choices are picked")
     print("2. Hear your misson again")
     print("3. Go to the village store")
-    print("4. Pick your animal friend")
+    print("4. Pick your character")
     print("5. Exit your climb")
     choice = int(input("Enter your choice (1-4): "))
     if choice == 1:
@@ -16,9 +18,11 @@ while True:
             print("You chose to go to the village store.")
             print("You have a total of 200 coins to spend right now.")
     elif choice == 4:
-            print("You will choose your animal friend to help you during your climb.")
+            print("You will choose your character for your climb.")
+            my_hero = select_character()
+            print(f"Game Start: {my_hero.Creature} is ready to climb...")
     elif choice == 5:
             print("You abandoned everyone who trusted you.")
             break
     else:
-        print("Invalid choice. Please enter 1, 2, 3, or 4.")
+        print("Invalid choice. Please enter 1, 2, 3, or 4")

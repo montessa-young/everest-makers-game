@@ -8,8 +8,8 @@ while True:
     print("4. leave shop")
     choice = int(input("Enter your choice (1-4): "))
     if choice == 1:
-        print("fire sword 30, grenade,50,bow,25, arrow equals 10, pickaxe, 10,potion to revive health,60,shield with a forcefield power to it,100")
-        print("ice trap,10, fire trap,10, water trap,10, lightning trap with poison effect,68, instant death trap when a monster steps on it,300")
+        print("fire sword 30, grenade,4,bow,25, arrow equals 10, pickaxe, 10,potion to revive health,20,shield with a forcefield power to it,50")
+        print("ice trap,10, fire trap,10, water trap,10, lightning trap with poison effect,68, instant death trap when a monster steps on it,100")
         print("pants resistance to cold,10, jacket that can hold 20 guns, 45, shoes that give you more speed, 30, a hat that can shot out fire and lightning,47")
         item_to_add = input("Enter the item to add: ")
         shopping_list.append(item_to_add)
