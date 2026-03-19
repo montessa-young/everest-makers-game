@@ -1,4 +1,4 @@
-from Characters import Character, AVAILABLE_CHARACTERS
+from Character import Character, AVAILABLE_CHARACTERS
 
 def select_character():
     print("--- CHOOSE YOUR CHARACTER ---")

@@ -1,5 +1,6 @@
 from select_character import select_character
 
+
 while True:
     print("Welcome to Mount Everst climbers")
     print("1. Start climbing but only if your choices are picked")
