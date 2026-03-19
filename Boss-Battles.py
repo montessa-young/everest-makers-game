@@ -19,11 +19,35 @@ def battle_python():
     boss_data = AVAILABLE_CHARACTERS[7]
     player = Character(**p1_data)
     boss = Character(**boss_data)
-    print("You've run into the mighty python")
-    print("Prepare for battle")
+    print("You've run into the mighty python!")
+    print("Prepare for battle.")
     result = battle(player, boss)
     print(result)
 
 
 battle_python()
+
+def battle_vampire():
+    p1_data = AVAILABLE_CHARACTERS[4]
+    boss_data = AVAILABLE_CHARACTERS[8]
+    player = Character(**p1_data)
+    boss = Character(**boss_data)
+    print("You've run into the Bloodthirsty Vampire!")
+    print("Prepare for battle.")
+    result = battle(player, boss)
+    print(result)
+
+    battle_vampire()
+
+    def battle_vampire():
+    p1_data = AVAILABLE_CHARACTERS[4]
+    boss_data = AVAILABLE_CHARACTERS[6]
+    player = Character(**p1_data)
+    boss = Character(**boss_data)
+    print("You've run into the Ferocious dragon!")
+    print("Prepare for battle.")
+    result = battle(player, boss)
+    print(result)
+
+    battle_dragon()
 
