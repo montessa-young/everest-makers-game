@@ -1,5 +1,5 @@
 from select_character import select_character
-
+from path import path
 
 while True:
     print("Welcome to Mount Everst climbers")
@@ -11,6 +11,7 @@ while True:
     choice = int(input("Enter your choice (1-4): "))
     if choice == 1:
         print("You started your epic climb to the peak!!")
+        path()
     elif choice == 2:
             print("You choose to hear your misson again.")
             print("The mission is to climb and defeat a monster to save the village.")
