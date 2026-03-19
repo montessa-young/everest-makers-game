@@ -1,5 +1,6 @@
+from boss_battles import battle_python, battle_dragon, battle_vampire
 import random
-def path():
+def path(my_hero):
     while True:
         print("What do you want to do now??")
         print("1: Continue traveling.")
@@ -9,8 +10,14 @@ def path():
         choice = int(input("Enter your choice (1-3): "))
         if choice == 1:
             print("You choose to keep moving")
-            rin = random.randint(1,10)
-            if rin >=8:
+            rin = random.randint(1,4)
+            if rin == 1:
+                battle_python(my_hero)
+            elif rin == 2:
+                battle_vampire(my_hero)
+            elif rin == 3:
+                battle_dragon(my_hero)
+            elif rin > 3:
                 print("A sudden blizzard over takes the mountain side and kills you!!")
                 print("You can now restart the climb")
                 break

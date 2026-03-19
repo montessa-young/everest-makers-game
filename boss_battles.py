@@ -1,6 +1,7 @@
 #Create final Boss battles
 
 from Character import Character, AVAILABLE_CHARACTERS
+
 import math
 def battle(player, boss):
     print(f"--- {player.Creature} vs {boss.Creature} ---")
@@ -14,40 +15,31 @@ def battle(player, boss):
     else:
         return "It's a drawl! Both fell at the same time."
 
-def battle_python():
-    p1_data = AVAILABLE_CHARACTERS[4]
+def battle_python(my_hero):
     boss_data = AVAILABLE_CHARACTERS[7]
-    player = Character(**p1_data)
     boss = Character(**boss_data)
     print("You've run into the mighty python!")
     print("Prepare for battle.")
-    result = battle(player, boss)
+    result = battle(my_hero, boss)
     print(result)
 
 
-battle_python()
 
-def battle_vampire():
-    p1_data = AVAILABLE_CHARACTERS[4]
+def battle_vampire(my_hero):
     boss_data = AVAILABLE_CHARACTERS[8]
-    player = Character(**p1_data)
     boss = Character(**boss_data)
     print("You've run into the Bloodthirsty Vampire!")
     print("Prepare for battle.")
-    result = battle(player, boss)
+    result = battle(my_hero, boss)
     print(result)
 
-    battle_vampire()
 
-    def battle_vampire():
-    p1_data = AVAILABLE_CHARACTERS[4]
+def battle_dragon(my_hero):
     boss_data = AVAILABLE_CHARACTERS[6]
-    player = Character(**p1_data)
     boss = Character(**boss_data)
     print("You've run into the Ferocious dragon!")
     print("Prepare for battle.")
-    result = battle(player, boss)
+    result = battle(my_hero, boss)
     print(result)
 
-    battle_dragon()
 
