@@ -1,4 +1,5 @@
 from select_character import select_character
+from store import store
 from path import path
 
 while True:
@@ -19,6 +20,7 @@ while True:
     elif choice == 3:
             print("You chose to go to the village store.")
             print("You have a total of 200 coins to spend right now.")
+            store()
     elif choice == 4:
             print("You will choose your character for your climb.")
             my_hero = select_character()
