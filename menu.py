@@ -1,7 +1,9 @@
 from select_character import select_character
+from Character import AVAILABLE_CHARACTERS
 from store import store
 from path import path
 
+my_hero= AVAILABLE_CHARACTERS[1]
 while True:
     print("Welcome to Mount Everst climbers")
     print("1. Start climbing but only if your choices are picked")
@@ -12,7 +14,7 @@ while True:
     choice = int(input("Enter your choice (1-4): "))
     if choice == 1:
         print("You started your epic climb to the peak!!")
-        path()
+        path(my_hero)
     elif choice == 2:
             print("You choose to hear your misson again.")
             print("The mission is to climb and defeat a monster to save the village.")
